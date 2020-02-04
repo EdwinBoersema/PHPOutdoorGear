@@ -14,8 +14,6 @@
 include 'templates/header.php';
 ?>
 
-<h1>Index Page</h1>
-
 <div class="grid">
     <?php foreach($data as $item): ?>
         <div class="item">
@@ -37,6 +35,7 @@ include 'templates/header.php';
             <?php endif  ?>
         </ul>
         <p class="item-notes">Notes:</p>
+        <a href="item.php?id=<?php echo $item['id']; ?>" class="item-edit">Edit</a>
         </div>
     <?php endforeach ?>
 
