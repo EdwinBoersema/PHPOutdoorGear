@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <nav class="nav bg-dark">
-            <a class="nav-link" href="home.php">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
             <a class="nav-link" href="add.php">Add</a>
         </nav>
 
