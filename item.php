@@ -33,7 +33,7 @@ include 'templates/header.php';
         <?php endif  ?>
     </ul>
     <p class="item-notes">Notes:</p>
-    <a href="/" class="item-edit">Back</a>
+    <a href="<?php echo ROOT_URL ?>" class="item-edit btn btn-primary">Back</a>
 
 </div>
 

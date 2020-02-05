@@ -35,7 +35,7 @@ include 'templates/header.php';
             <?php endif  ?>
         </ul>
         <p class="item-notes">Notes:</p>
-        <a href="item.php?id=<?php echo $item['id']; ?>" class="item-edit">Edit</a>
+        <a href="item.php?id=<?php echo $item['id']; ?>" class="item-edit btn btn-primary">Edit</a>
         </div>
     <?php endforeach ?>
 
