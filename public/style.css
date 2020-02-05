@@ -96,4 +96,11 @@ body {
 
 .item-edit {
     grid-area: edit;
+    max-width: 50px;
+    max-height: 35px;
+}
+
+.add-form {
+    padding-right: 25%;
+    padding-left: 25%;
 }
