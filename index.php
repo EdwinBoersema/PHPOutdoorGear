@@ -17,16 +17,11 @@ include 'templates/header.php';
 <div class="grid">
     <?php foreach($data as $item): ?>
         <div class="item">
-        <?php if($item['img'] !== null): ?>
-            <img src="<?php echo $item['img']; ?>" class="item-img">
-        <?php else: ?>
-            <img src="images/placeholder.png" class="item-img">
-        <?php endif ?>
         <h2 class="item-title"><?php echo $item['name']; ?></h2>
-        <ul>
+        <ul class="item-desc" >
             <li>Created: <?php echo $item['created_at']; ?></li>
             <?php if($item['checked_at'] !== null): ?>
-                <li>Checked: <?php echo $item['created_at']; ?></li>
+                <li>Checked: <?php echo $item['checked_at']; ?></li>
             <?php else: ?>
                 <li>Checked: Never</li>
             <?php endif ?>
@@ -37,7 +32,7 @@ include 'templates/header.php';
             <?php endif  ?>
         </ul>
         <p class="item-notes">Notes:</p>
-        <a href="item.php?id=<?php echo $item['id']; ?>" class="item-edit btn btn-primary">Edit</a>
+        <a href="edit.php?id=<?php echo $item['id']; ?>" class="item-edit btn btn-primary">Edit</a>
         </div>
     <?php endforeach ?>
 

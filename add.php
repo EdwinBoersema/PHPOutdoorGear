@@ -20,9 +20,6 @@
 
         $notes = mysqli_real_escape_string($connect, $_POST['notes']);
 
-        // upload image and create url string (not implemented atm)
-        // $img = mysqli_real_escape_string($connect, $_POST['img']);
-
         $query = "INSERT INTO gear(name, expired, notes) VALUES('$name', '$expired', '$notes')";
         if(mysqli_query($connect, $query)){
             header('Location: '.ROOT_URL."");
@@ -48,7 +45,6 @@ include 'templates/header.php';
     </div>
     <div class="form-group">
         <label>Worn out?</label>
-        <!-- <input type="number" name="expired" class="form-control"> -->
         <select class="form-control" name="expired">
             <option value="no">no</option>
             <option value="yes">yes</option>
