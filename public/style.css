@@ -64,7 +64,7 @@ body {
     grid-template-areas: 
     "title title notes notes"
     "desc desc notes notes"
-    "desc desc . edit";
+    "edit . . delete";
     background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 4px;
@@ -96,6 +96,14 @@ body {
 
 .item-edit {
     grid-area: edit;
+    max-width: 50px;
+    max-height: 35px;
+    max-height: 90%;
+    margin: 0 5px 5px 5px;
+}
+
+.item-delete {
+    grid-area: delete;
     max-width: 50px;
     max-height: 35px;
     max-height: 90%;
