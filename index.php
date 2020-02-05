@@ -30,8 +30,10 @@ include 'templates/header.php';
             <?php else: ?>
                 <li>Checked: Never</li>
             <?php endif ?>
-            <?php if($item['expired'] !== null): ?>
-                <li class="expired"><?php echo $item['expired']; ?></li>
+            <?php if($item['expired'] == 0): ?>
+                <li class="expired">Expired: no</li>
+            <?php else: ?>
+                <li class="expired">Expired: yes</li>
             <?php endif  ?>
         </ul>
         <p class="item-notes">Notes:</p>
